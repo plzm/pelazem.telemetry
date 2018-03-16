@@ -10,7 +10,7 @@ namespace pelazem.telemetry.appInsightsTest
 		{
 			string name = Guid.NewGuid().ToString();
 
-			TelemetrySink sink = new TelemetrySink("c836de01-85a7-4810-b8e5-76066b12822f");
+			TelemetrySink sink = new TelemetrySink(APP INSIGHTS INSTRUMENTATION KEY);
 
 			for (int i = 1; i <= 300; i++)
 			{
