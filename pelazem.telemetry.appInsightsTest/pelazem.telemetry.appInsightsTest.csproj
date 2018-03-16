@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <RepositoryUrl></RepositoryUrl>
+    <Company />
+    <Authors>Patrick El-Azem (www.linkedin.com/in/pelazem)</Authors>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\pelazem.telemetry.appInsights\pelazem.telemetry.appInsightsSink.csproj" />
+  </ItemGroup>
+
+</Project>
