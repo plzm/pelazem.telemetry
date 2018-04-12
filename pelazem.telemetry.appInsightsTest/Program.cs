@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Configuration.Json;
 using pelazem.telemetry;
 using pelazem.telemetry.appInsightsSink;
 
@@ -7,11 +10,17 @@ namespace pelazem.telemetry.appInsightsTest
 {
 	class Program
 	{
+		const string APPSETTINGSPATH = "appsettings.json";
+		const string APPINSIGHTSINSTRUMENTATIONKEY = "AppInsightsInstrumentationKey";
+
 		static void Main(string[] args)
 		{
-			string name = Guid.NewGuid().ToString();
+			string appInsightsInstrumentationKey = GetAppInsightsInstrumentationKey();
 
-			AppInsightsTelemetrySink sink = new AppInsightsTelemetrySink("YOURAPPINSIGHTSINSTRUMENTATIONKEY");
+			if (string.IsNullOrWhiteSpace(appInsightsInstrumentationKey))
+				throw new Exception("No App Insights Instrumentation Key could be retrieved from configuration!");
+
+			AppInsightsTelemetrySink sink = new AppInsightsTelemetrySink(appInsightsInstrumentationKey);
 
 			List<TelemetryEvent> events = new List<TelemetryEvent>();
 
@@ -44,5 +53,32 @@ namespace pelazem.telemetry.appInsightsTest
 
 			sink.Client.Flush();
 		}
+
+		private static string GetAppInsightsInstrumentationKey()
+		{
+			var config = GetConfig();
+
+			return config[APPINSIGHTSINSTRUMENTATIONKEY];
+		}
+
+		private static IConfigurationRoot GetConfig()
+		{
+			var builder = new ConfigurationBuilder()
+				.SetBasePath(Directory.GetCurrentDirectory())
+				.AddJsonFile(APPSETTINGSPATH, false, false)
+			;
+
+			return builder.Build();
+		}
+	}
+
+	public class AppConfig
+	{
+		public AppInsights AppInsights { get; set; }
+	}
+
+	public class AppInsights
+	{
+		public string InstrumentationKey { get; set; }
 	}
 }

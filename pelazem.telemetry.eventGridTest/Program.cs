@@ -8,6 +8,8 @@ namespace pelazem.telemetry.eventGridTest
 {
 	class Program
 	{
+		const string APPSETTINGSPATH = "appsettings.json";
+
 		static void Main(string[] args)
 		{
 			Publish();
@@ -18,8 +20,7 @@ namespace pelazem.telemetry.eventGridTest
 
 		static void Publish()
 		{
-			string topicHostName = "YOURTOPICHOSTNAME";
-			string topicKey = "YOURTOPICKEY";
+			AppConfig config = AppConfig.GetInstance(APPSETTINGSPATH);
 
 			List<TelemetryEvent> events = new List<TelemetryEvent>();
 
@@ -48,10 +49,9 @@ namespace pelazem.telemetry.eventGridTest
 				events.Add(te);
 			}
 
-			EventGridTelemetrySink sink = new EventGridTelemetrySink(topicHostName, topicKey);
+			EventGridTelemetrySink sink = new EventGridTelemetrySink(config.EventGrid.TopicHostName, config.EventGrid.TopicKey);
 
 			sink.Send(events);
 		}
-
 	}
 }

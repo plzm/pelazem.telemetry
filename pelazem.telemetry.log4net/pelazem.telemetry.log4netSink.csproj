@@ -8,8 +8,14 @@
     <Authors>Patrick El-Azem (www.linkedin.com/in/pelazem)</Authors>
     <RepositoryUrl>http://github.com/plzm/pelazem.telemetry</RepositoryUrl>
     <PackageProjectUrl>http://github.com/plzm/pelazem.telemetry</PackageProjectUrl>
-    <Version>2.0</Version>
+    <Version>2.0.1</Version>
+    <AssemblyVersion>2.0.1.0</AssemblyVersion>
+    <Description>A telemetry sink for log4net usable with pelazem.telemetry.</Description>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="LogEvent.cs" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="log4net" Version="2.0.8" />
