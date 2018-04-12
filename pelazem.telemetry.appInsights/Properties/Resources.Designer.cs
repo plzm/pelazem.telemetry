@@ -70,11 +70,11 @@ namespace pelazem.telemetry.appInsightsSink.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Application Insights.
+        ///   Looks up a localized string similar to Empty event list passed! Please pass at least one event..
         /// </summary>
-        internal static string Name {
+        internal static string EventListEmpty {
             get {
-                return ResourceManager.GetString("Name", resourceCulture);
+                return ResourceManager.GetString("EventListEmpty", resourceCulture);
             }
         }
     }

@@ -7,11 +7,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "pelazem.telemetry", "pelaze
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "pelazem.telemetry.appInsightsSink", "pelazem.telemetry.appInsights\pelazem.telemetry.appInsightsSink.csproj", "{C9343081-A90B-4615-8FDB-EB618DE1C733}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "pelazem.telemetry.log4net", "pelazem.telemetry.log4net\pelazem.telemetry.log4net.csproj", "{45A2D66A-C408-4BD3-A655-B3DF6E139EA7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "pelazem.telemetry.log4netSink", "pelazem.telemetry.log4net\pelazem.telemetry.log4netSink.csproj", "{45A2D66A-C408-4BD3-A655-B3DF6E139EA7}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "pelazem.telemetry.appInsightsTest", "pelazem.telemetry.appInsightsTest\pelazem.telemetry.appInsightsTest.csproj", "{85506FAD-944E-4850-9A18-E28A27CA8CFE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pelazem.telemetry.log4netTest", "pelazem.telemetry.log4netTest\pelazem.telemetry.log4netTest.csproj", "{6A529066-255C-4288-859F-DAB557A27D2A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "pelazem.telemetry.log4netTest", "pelazem.telemetry.log4netTest\pelazem.telemetry.log4netTest.csproj", "{6A529066-255C-4288-859F-DAB557A27D2A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "pelazem.telemetry.eventGridSink", "pelazem.telemetry.eventGridSink\pelazem.telemetry.eventGridSink.csproj", "{A8DB99BF-E35E-4D4A-A0E4-4FF9629A789B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pelazem.telemetry.eventGridTest", "pelazem.telemetry.eventGridTest\pelazem.telemetry.eventGridTest.csproj", "{B6FC4546-4E5E-4017-AD4A-8E5056AF77FB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{6A529066-255C-4288-859F-DAB557A27D2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A529066-255C-4288-859F-DAB557A27D2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A529066-255C-4288-859F-DAB557A27D2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8DB99BF-E35E-4D4A-A0E4-4FF9629A789B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8DB99BF-E35E-4D4A-A0E4-4FF9629A789B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8DB99BF-E35E-4D4A-A0E4-4FF9629A789B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8DB99BF-E35E-4D4A-A0E4-4FF9629A789B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6FC4546-4E5E-4017-AD4A-8E5056AF77FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6FC4546-4E5E-4017-AD4A-8E5056AF77FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6FC4546-4E5E-4017-AD4A-8E5056AF77FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6FC4546-4E5E-4017-AD4A-8E5056AF77FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

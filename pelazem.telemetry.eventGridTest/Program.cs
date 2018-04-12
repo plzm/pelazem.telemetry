@@ -1,17 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using pelazem.telemetry;
-using pelazem.telemetry.appInsightsSink;
+using pelazem.telemetry.eventGridSink;
 
-namespace pelazem.telemetry.appInsightsTest
+namespace pelazem.telemetry.eventGridTest
 {
 	class Program
 	{
 		static void Main(string[] args)
 		{
-			string name = Guid.NewGuid().ToString();
+			Publish();
 
-			AppInsightsTelemetrySink sink = new AppInsightsTelemetrySink("YOURAPPINSIGHTSINSTRUMENTATIONKEY");
+			Console.WriteLine("Press any key when ready...");
+			Console.Read();
+		}
+
+		static void Publish()
+		{
+			string topicHostName = "YOURTOPICHOSTNAME";
+			string topicKey = "YOURTOPICKEY";
 
 			List<TelemetryEvent> events = new List<TelemetryEvent>();
 
@@ -40,9 +48,10 @@ namespace pelazem.telemetry.appInsightsTest
 				events.Add(te);
 			}
 
-			sink.Send(events);
+			EventGridTelemetrySink sink = new EventGridTelemetrySink(topicHostName, topicKey);
 
-			sink.Client.Flush();
+			sink.Send(events);
 		}
+
 	}
 }

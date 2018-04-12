@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace pelazem.telemetry.log4netSink.Properties {
+namespace pelazem.telemetry.eventGridSink.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace pelazem.telemetry.log4netSink.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("pelazem.telemetry.log4netSink.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("pelazem.telemetry.eventGridSink.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,11 +61,20 @@ namespace pelazem.telemetry.log4netSink.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to %date [%thread] %-5level %logger - %message%newline.
+        ///   Looks up a localized string similar to Please provide a valid Azure Event Grid topic host name!.
         /// </summary>
-        internal static string ConversionPattern {
+        internal static string EventGridTopicHostName {
             get {
-                return ResourceManager.GetString("ConversionPattern", resourceCulture);
+                return ResourceManager.GetString("EventGridTopicHostName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please provide a valid Azure Event Grid topic key!.
+        /// </summary>
+        internal static string EventGridTopicKey {
+            get {
+                return ResourceManager.GetString("EventGridTopicKey", resourceCulture);
             }
         }
         
@@ -75,51 +84,6 @@ namespace pelazem.telemetry.log4netSink.Properties {
         internal static string EventListEmpty {
             get {
                 return ResourceManager.GetString("EventListEmpty", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to log.txt.
-        /// </summary>
-        internal static string FilePattern {
-            get {
-                return ResourceManager.GetString("FilePattern", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to 10485760.
-        /// </summary>
-        internal static string MaxFileSizeInBytes {
-            get {
-                return ResourceManager.GetString("MaxFileSizeInBytes", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to 5.
-        /// </summary>
-        internal static string MaxSizeRollBackups {
-            get {
-                return ResourceManager.GetString("MaxSizeRollBackups", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to log4net.
-        /// </summary>
-        internal static string Name {
-            get {
-                return ResourceManager.GetString("Name", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TelemetrySink.
-        /// </summary>
-        internal static string RepositoryName {
-            get {
-                return ResourceManager.GetString("RepositoryName", resourceCulture);
             }
         }
     }

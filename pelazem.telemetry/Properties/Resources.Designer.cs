@@ -61,6 +61,15 @@ namespace pelazem.telemetry.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Empty event list passed! Please pass at least one event..
+        /// </summary>
+        internal static string EventListEmpty {
+            get {
+                return ResourceManager.GetString("EventListEmpty", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Empty telemetry sink list provided! Please provide at least one telemetry sink..
         /// </summary>
         internal static string TelemetryListEmpty {

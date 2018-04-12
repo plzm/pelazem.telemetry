@@ -8,11 +8,12 @@
     <Authors>Patrick El-Azem (www.linkedin.com/in/pelazem)</Authors>
     <RepositoryUrl>http://github.com/plzm/pelazem.telemetry</RepositoryUrl>
     <PackageProjectUrl>http://github.com/plzm/pelazem.telemetry</PackageProjectUrl>
+    <Version>2.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="log4net" Version="2.0.8" />
-    <PackageReference Include="pelazem.telemetry" Version="1.2.0" />
+    <PackageReference Include="pelazem.telemetry" Version="2.0.7" />
     <PackageReference Include="pelazem.util" Version="2.1.0" />
   </ItemGroup>
 

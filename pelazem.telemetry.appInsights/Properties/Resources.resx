@@ -120,7 +120,7 @@
   <data name="AppInsightsKeyBlank" xml:space="preserve">
     <value>The provided Application Insights Key was blank.</value>
   </data>
-  <data name="Name" xml:space="preserve">
-    <value>Application Insights</value>
+  <data name="EventListEmpty" xml:space="preserve">
+    <value>Empty event list passed! Please pass at least one event.</value>
   </data>
 </root>

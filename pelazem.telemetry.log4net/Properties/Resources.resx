@@ -120,6 +120,9 @@
   <data name="ConversionPattern" xml:space="preserve">
     <value>%date [%thread] %-5level %logger - %message%newline</value>
   </data>
+  <data name="EventListEmpty" xml:space="preserve">
+    <value>Empty event list passed! Please pass at least one event.</value>
+  </data>
   <data name="FilePattern" xml:space="preserve">
     <value>log.txt</value>
   </data>

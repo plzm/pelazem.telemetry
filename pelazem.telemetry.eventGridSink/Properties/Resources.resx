@@ -117,13 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="EventGridTopicHostName" xml:space="preserve">
+    <value>Please provide a valid Azure Event Grid topic host name!</value>
+  </data>
+  <data name="EventGridTopicKey" xml:space="preserve">
+    <value>Please provide a valid Azure Event Grid topic key!</value>
+  </data>
   <data name="EventListEmpty" xml:space="preserve">
     <value>Empty event list passed! Please pass at least one event.</value>
-  </data>
-  <data name="TelemetryListEmpty" xml:space="preserve">
-    <value>Empty telemetry sink list provided! Please provide at least one telemetry sink.</value>
-  </data>
-  <data name="TelemetryListNoValidSinks" xml:space="preserve">
-    <value>No valid telemetry sinks provided! Please provide at least one non-null telemetry sink.</value>
   </data>
 </root>
