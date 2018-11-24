@@ -102,7 +102,7 @@ namespace pelazem.telemetry
 		public string Uri { get; set; }
 
 
-		public DateTime? TimeStamp { get; set; } = null;
+		public DateTime? TimeStamp { get; set; } = DateTime.UtcNow;
 
 		public TimeSpan? Duration { get; set; } = null;
 

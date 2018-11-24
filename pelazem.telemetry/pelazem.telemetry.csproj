@@ -11,9 +11,9 @@
     <Description>A telemetry facade. Requires individual telemetry sinks to be passed at construction. See for example pelazem.telemetry.appInsights for a sink facade over the App Insights SDK.</Description>
     <RepositoryUrl>https://github.com/plzm/pelazem.telemetry</RepositoryUrl>
     <PackageProjectUrl>https://github.com/plzm/pelazem.telemetry</PackageProjectUrl>
-    <AssemblyVersion>2.1.0.0</AssemblyVersion>
-    <FileVersion>2.1.0.0</FileVersion>
-    <Version>2.1.0</Version>
+    <AssemblyVersion>2.2.0.0</AssemblyVersion>
+    <FileVersion>2.2.0.0</FileVersion>
+    <Version>2.2.0</Version>
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
 

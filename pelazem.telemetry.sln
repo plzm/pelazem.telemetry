@@ -5,9 +5,9 @@ VisualStudioVersion = 15.0.27428.2005
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "pelazem.telemetry", "pelazem.telemetry\pelazem.telemetry.csproj", "{C00C1931-CFEC-4B31-8125-7F87A08613E7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "pelazem.telemetry.appInsightsSink", "pelazem.telemetry.appInsights\pelazem.telemetry.appInsightsSink.csproj", "{C9343081-A90B-4615-8FDB-EB618DE1C733}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "pelazem.telemetry.appInsightsSink", "pelazem.telemetry.appInsightsSink\pelazem.telemetry.appInsightsSink.csproj", "{C9343081-A90B-4615-8FDB-EB618DE1C733}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "pelazem.telemetry.log4netSink", "pelazem.telemetry.log4net\pelazem.telemetry.log4netSink.csproj", "{45A2D66A-C408-4BD3-A655-B3DF6E139EA7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "pelazem.telemetry.log4netSink", "pelazem.telemetry.log4netSink\pelazem.telemetry.log4netSink.csproj", "{45A2D66A-C408-4BD3-A655-B3DF6E139EA7}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "pelazem.telemetry.appInsightsTest", "pelazem.telemetry.appInsightsTest\pelazem.telemetry.appInsightsTest.csproj", "{85506FAD-944E-4850-9A18-E28A27CA8CFE}"
 EndProject

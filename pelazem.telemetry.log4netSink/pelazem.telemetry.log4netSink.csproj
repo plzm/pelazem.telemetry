@@ -2,19 +2,25 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>pelazem.telemetry.log4netSink</AssemblyName>
+    <RootNamespace>pelazem.telemetry.log4netSink</RootNamespace>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Patrick El-Azem (www.linkedin.com/in/pelazem)</Authors>
-    <Company />
-    <PackageProjectUrl>http://github.com/plzm/pelazem.telemetry</PackageProjectUrl>
-    <RepositoryUrl>http://github.com/plzm/pelazem.telemetry</RepositoryUrl>
-    <Version>2.1.0</Version>
-    <Description>An Azure Application Insights telemetry sink.</Description>
+    <RepositoryUrl>https://github.com/plzm/pelazem.telemetry</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/plzm/pelazem.telemetry</PackageProjectUrl>
+    <Version>2.2.0</Version>
+    <AssemblyVersion>2.2.0.0</AssemblyVersion>
+    <Description>A telemetry sink for log4net usable with pelazem.telemetry.</Description>
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.ApplicationInsights" Version="2.8.1" />
-    <PackageReference Include="pelazem.telemetry" Version="2.0.7" />
+    <Compile Remove="LogEvent.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="log4net" Version="2.0.8" />
+    <PackageReference Include="pelazem.telemetry" Version="2.2.0" />
     <PackageReference Include="pelazem.util" Version="2.1.1" />
   </ItemGroup>
 
