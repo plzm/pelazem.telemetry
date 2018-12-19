@@ -2,26 +2,18 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <AssemblyName>pelazem.telemetry.log4netSink</AssemblyName>
-    <RootNamespace>pelazem.telemetry.log4netSink</RootNamespace>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Patrick El-Azem (www.linkedin.com/in/pelazem)</Authors>
-    <RepositoryUrl>https://github.com/plzm/pelazem.telemetry</RepositoryUrl>
+    <Company>Patrick El-Azem (www.linkedin.com/in/pelazem)</Company>
+    <Description>An Azure Event Grid event sink.</Description>
     <PackageProjectUrl>https://github.com/plzm/pelazem.telemetry</PackageProjectUrl>
-    <Version>2.2.1</Version>
-    <AssemblyVersion>2.2.1.0</AssemblyVersion>
-    <Description>A telemetry sink for log4net usable with pelazem.telemetry.</Description>
-    <LangVersion>latest</LangVersion>
+    <RepositoryUrl>https://github.com/plzm/pelazem.telemetry</RepositoryUrl>
+    <Version>2.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="LogEvent.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="log4net" Version="2.0.8" />
+    <PackageReference Include="Microsoft.Azure.EventGrid" Version="3.0.0" />
     <PackageReference Include="pelazem.telemetry" Version="2.2.0" />
-    <PackageReference Include="pelazem.util" Version="2.1.1" />
   </ItemGroup>
 
   <ItemGroup>

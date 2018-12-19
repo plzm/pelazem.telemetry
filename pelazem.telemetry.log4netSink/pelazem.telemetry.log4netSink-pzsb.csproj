@@ -6,12 +6,11 @@
     <RootNamespace>pelazem.telemetry.log4netSink</RootNamespace>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Patrick El-Azem (www.linkedin.com/in/pelazem)</Authors>
-    <RepositoryUrl>https://github.com/plzm/pelazem.telemetry</RepositoryUrl>
-    <PackageProjectUrl>https://github.com/plzm/pelazem.telemetry</PackageProjectUrl>
-    <Version>2.2.1</Version>
-    <AssemblyVersion>2.2.1.0</AssemblyVersion>
+    <RepositoryUrl>http://github.com/plzm/pelazem.telemetry</RepositoryUrl>
+    <PackageProjectUrl>http://github.com/plzm/pelazem.telemetry</PackageProjectUrl>
+    <Version>2.0.1</Version>
+    <AssemblyVersion>2.0.1.0</AssemblyVersion>
     <Description>A telemetry sink for log4net usable with pelazem.telemetry.</Description>
-    <LangVersion>latest</LangVersion>
   </PropertyGroup>
 
   <ItemGroup>
@@ -21,7 +20,7 @@
   <ItemGroup>
     <PackageReference Include="log4net" Version="2.0.8" />
     <PackageReference Include="pelazem.telemetry" Version="2.2.0" />
-    <PackageReference Include="pelazem.util" Version="2.1.1" />
+    <PackageReference Include="pelazem.util" Version="2.2.0" />
   </ItemGroup>
 
   <ItemGroup>

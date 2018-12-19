@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\pelazem.telemetry.log4net\pelazem.telemetry.log4netSink.csproj" />
+    <ProjectReference Include="..\pelazem.telemetry.log4netSink\pelazem.telemetry.log4netSink.csproj" />
   </ItemGroup>
 
 </Project>
