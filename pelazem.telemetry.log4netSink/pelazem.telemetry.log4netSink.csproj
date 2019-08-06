@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -20,8 +20,8 @@
 
   <ItemGroup>
     <PackageReference Include="log4net" Version="2.0.8" />
-    <PackageReference Include="pelazem.telemetry" Version="2.2.0" />
-    <PackageReference Include="pelazem.util" Version="2.1.1" />
+    <PackageReference Include="pelazem.telemetry" Version="2.2.1" />
+    <PackageReference Include="pelazem.util" Version="3.0.2" />
   </ItemGroup>
 
   <ItemGroup>
