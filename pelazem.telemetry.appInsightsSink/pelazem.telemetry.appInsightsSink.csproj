@@ -13,7 +13,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.ApplicationInsights" Version="2.10.0" />
+    <PackageReference Include="Microsoft.ApplicationInsights" Version="2.16.0" />
     <PackageReference Include="pelazem.telemetry" Version="2.2.1" />
     <PackageReference Include="pelazem.util" Version="3.0.2" />
   </ItemGroup>
