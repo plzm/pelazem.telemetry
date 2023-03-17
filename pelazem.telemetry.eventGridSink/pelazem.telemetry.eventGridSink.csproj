@@ -15,7 +15,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Azure.EventGrid" Version="3.2.0" />
+    <PackageReference Include="Microsoft.Azure.EventGrid" Version="3.2.1" />
     <PackageReference Include="pelazem.telemetry" Version="2.2.1" />
   </ItemGroup>
 
