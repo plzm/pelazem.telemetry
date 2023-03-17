@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="log4net" Version="2.0.8" />
+    <PackageReference Include="log4net" Version="2.0.10" />
     <PackageReference Include="pelazem.telemetry" Version="2.2.0" />
     <PackageReference Include="pelazem.util" Version="2.2.0" />
   </ItemGroup>
