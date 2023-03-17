@@ -15,7 +15,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.ApplicationInsights" Version="2.21.0" />
     <PackageReference Include="pelazem.telemetry" Version="2.2.1" />
-    <PackageReference Include="pelazem.util" Version="3.0.2" />
+    <PackageReference Include="pelazem.util" Version="7.0.0" />
   </ItemGroup>
 
   <ItemGroup>
